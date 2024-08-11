@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <br>
+        <h1 align="center">Salary Prediction End-to-End Machine Learning Project</h1>
+        <hr>
+        <br>
+        
+        <fieldset align="center">
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <br>
+                <label class="control-label" align="center">Select CSV File Contatining Sample Data</label>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <input type="file" name="data_file" class="btn btn-block"/>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+                <br><br>
+            </form>
+        </fieldset>
+        <br><br>
+        
+        <h3 align="center">{{ prediction_text }}</h3>
+        
+    </body>
+</html>
